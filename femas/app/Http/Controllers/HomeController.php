@@ -6,10 +6,8 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-
-   public function index()
+    public function index()
     {
-        // Datos de ejemplo para tus proyectos
         $projects = [
             [
                 'title' => 'E-commerce Laravel',
@@ -35,5 +33,4 @@ class HomeController extends Controller
     {
         return view('about');
     }
-
 }
