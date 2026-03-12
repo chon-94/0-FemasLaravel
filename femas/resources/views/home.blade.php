@@ -17,7 +17,7 @@
                 <div class="carousel-item active">
                     <img src="{{ asset('images/construccion3.jpg') }}" class="d-block w-100" style="height: 100vh; object-fit: cover;" alt="Femas Slide 1">
                     <div class="carousel-caption d-none d-md-block bg-black bg-opacity-50 rounded p-4">
-                        <h1 class="text-4xl md:text-6xl font-bold mb-2">Somos<span class="text-blue-400">Femas</span></h1>
+                        <h1 class="text-4xl md:text-6xl font-bold mb-2">Somos<span class="text-yellow-400">Femas</span></h1>
                         <p class="text-xl">constructora</p>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Anterior</span>
             </button>
-            
+
             <button class="carousel-control-next" type="button" data-bs-target="#carouselFemas" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Siguiente</span>
@@ -59,13 +59,13 @@
         
         <div class="grid md:grid-cols-3 gap-8">
             @foreach($projects as $project)
-                <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
+                <div class="bg-yellow-100 p-6 rounded-xl shadow-sm hover:shadow-md transition border border-gray-100">
                     <div class="h-40 bg-gray-200 rounded-lg mb-4 flex items-center justify-center text-gray-400">
                         Imagen Proyecto
                     </div>
                     <h3 class="text-xl font-bold mb-2">{{ $project['title'] }}</h3>
                     <p class="text-gray-600 mb-4">{{ $project['desc'] }}</p>
-                    <a href="{{ $project['link'] }}" class="text-blue-600 font-semibold hover:underline">Ver más &rarr;</a>
+                    <a href="{{ $project['link'] }}" class="text-yellow-600 font-semibold hover:underline">Ver más &rarr;</a>
                 </div>
             @endforeach
         </div>
@@ -77,7 +77,7 @@
     <div class="max-w-4xl mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-8">¿Trabajamos juntos?</h2>
         <p class="text-gray-400 mb-8">Estoy disponible para nuevos proyectos. Envíame un correo y hablemos.</p>
-        <a href="mailto:contacto@femas.dev" class="inline-block px-8 py-4 bg-blue-600 rounded-full font-bold text-lg hover:bg-blue-500 transition">
+        <a href="mailto:contacto@femas.dev" class="inline-block px-8 py-4 bg-yellow-100 rounded-full font-bold text-lg hover:bg-yellow-200 transition">
             Enviar Correo
         </a>
     </div>

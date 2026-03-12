@@ -15,7 +15,7 @@
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
 <!-- NAV BAR -->
-<nav class="fixed top-0 left-0 right-0 z-50 w-11/12 mx-auto mt-4 bg-blue-100/95 backdrop-blur-sm rounded-full text-sm py-3 border-2 border-blue-600 hover:bg-blue-200 transition shadow-lg">
+<nav class="relative mx-auto flex-wrap sm:justify-start sm:flex-nowrap z-50 w-11/12 bg-yellow-100 rounded-full text-sm py-2 border-3 border-black hover:bg-orange-100">
     <div class="container mx-auto flex flex-wrap items-center">
 
         <!-- NOMBRE Y LOGO -->
@@ -71,5 +71,17 @@
     </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    window.addEventListener('scroll', function() {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('shadow-xl', 'bg-blue-100');
+            nav.classList.remove('mt-4');
+        } else {
+            nav.classList.remove('shadow-xl');
+            nav.classList.add('mt-4');
+        }
+    });
+</script>
 </body>
 </html>
