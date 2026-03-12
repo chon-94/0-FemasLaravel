@@ -4,43 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi CV - Portafolio</title>
-    <!-- Vite incluye Tailwind automáticamente -->
+    <title>Femas | Portafolio Profesional</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Vite (Tailwind) -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
-    <!-- Navegación -->
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <!-- Logo -->
-                <a href="{{ route('home') }}" class="text-2xl font-bold text-blue-600">
-                    Mi<span class="text-gray-800">CV</span>
-                </a>
+<!-- NAV BAR -->
+<nav class="fixed top-0 left-0 right-0 z-50 w-11/12 mx-auto mt-4 bg-blue-100/95 backdrop-blur-sm rounded-full text-sm py-3 border-2 border-blue-600 hover:bg-blue-200 transition shadow-lg">
+    <div class="container mx-auto flex flex-wrap items-center">
 
-                <!-- Menú -->
-                <div class="space-x-6 hidden md:flex">
-                    <a href="{{ route('home') }}" class="hover:text-blue-600 transition">Inicio</a>
-                    <a href="{{ route('home') }}#proyectos" class="hover:text-blue-600 transition">Proyectos</a>
-                    <a href="{{ route('home') }}#contacto" class="hover:text-blue-600 transition">Contacto</a>
-                    <a href="{{ route('about') }}" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Sobre Mí</a>
-                </div>
-            </div>
+        <!-- NOMBRE Y LOGO -->
+        <div class="flex w-full md:w-1/2 justify-center md:justify-start font-extrabold">
+            <a href="{{ route('home') }}" class="text-blue-800 text-xl hover:text-blue-600 transition">
+                Femas<span class="text-blue-600">.dev</span>
+            </a>
         </div>
-    </nav>
+        <!-- NOMBRE Y LOGO -->
+
+        <!-- OPCIONES PRINCIPALES -->
+        <div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
+            <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
+
+                <!-- Proyectos -->
+                <li class="mr-3">
+                    <a href="{{ route('home') }}#proyectos" class="px-4 py-2 text-blue-800 hover:bg-blue-600 hover:text-white rounded-full transition">
+                        Proyectos
+                    </a>
+                </li>
+
+                <!-- Contacto -->
+                <li class="mr-3">
+                    <a href="{{ route('home') }}#contacto" class="px-4 py-2 text-blue-800 hover:bg-blue-600 hover:text-white rounded-full transition">
+                        Contactame
+                    </a>
+                </li>
+
+                <!-- about -->
+                <li class="mr-3">
+                    <a href="{{ route('about') }}" class="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition shadow">  
+                        about
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<!-- FIN NAV BAR -->
 
     <!-- Contenido Principal -->
-    <main class="pt-16">
+    <main class="pt-20">
         @yield('content')
     </main>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-8 mt-12">
         <div class="max-w-6xl mx-auto px-4 text-center">
-            <p>&copy; {{ date('Y') }} Mi Portafolio. Hecho con Laravel & Tailwind.</p>
+            <p>&copy; {{ date('Y') }} Portafolio, hecho con Laravel & Tailwind.</p>
         </div>
     </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

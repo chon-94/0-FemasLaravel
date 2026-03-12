@@ -10,20 +10,35 @@ class HomeController extends Controller
     {
         $projects = [
             [
-                'title' => 'E-commerce Laravel',
-                'desc' => 'Una tienda online completa con carrito y pagos.',
+                'title' => 'proyecto 01',
+                'desc' => 'xxxxxxxxx    xxxxxx  xxxxxx',
                 'link' => '#'
             ],
             [
-                'title' => 'App de Tareas',
-                'desc' => 'Gestor de tareas con autenticación y API.',
+                'title' => 'proyecto 02',
+                'desc' => 'xxxxxxxxx    xxxxxx  xxxxxx',
                 'link' => '#'
             ],
             [
-                'title' => 'Landing Page',
-                'desc' => 'Diseño responsive para una agencia de marketing.',
+                'title' => 'proyecto 03',
+                'desc' => 'xxxxxxxxx    xxxxxx  xxxxxx',
                 'link' => '#'
             ],
+            [
+                'title' => 'proyecto 04',
+                'desc' => 'xxxxxxxxx    xxxxxx  xxxxxx',
+                'link' => '#'
+            ],
+            [
+                 'title' => 'proyecto 05',
+                'desc' => 'xxxxxxxxx    xxxxxx  xxxxxx',
+                'link' => '#'
+            ],
+            [
+                'title' => 'proyecto 06',
+                'desc' => 'xxxxxxxxx    xxxxxx  xxxxxx',
+                'link' => '#'
+            ],                        
         ];
 
         return view('home', compact('projects'));
