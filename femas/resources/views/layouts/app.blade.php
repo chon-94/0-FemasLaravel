@@ -20,8 +20,8 @@
 
         <!-- NOMBRE Y LOGO -->
         <div class="flex w-full md:w-1/2 justify-center md:justify-start font-extrabold">
-            <a href="{{ route('home') }}" class="text-blue-800 text-xl hover:text-blue-600 transition">
-                Femas<span class="text-blue-600">.dev</span>
+            <a href="{{ route('home') }}" class="text-dark text-xl hover:text-orange-600 transition">
+                Femas<span class="text-orange-400">.dev</span>
             </a>
         </div>
         <!-- NOMBRE Y LOGO -->
@@ -32,21 +32,21 @@
 
                 <!-- Proyectos -->
                 <li class="mr-3">
-                    <a href="{{ route('home') }}#proyectos" class="px-4 py-2 text-blue-800 hover:bg-blue-600 hover:text-white rounded-full transition">
+                    <a href="{{ route('home') }}#proyectos" class="px-4 py-2 text-dark hover:bg-orange-400 hover:text-white rounded-full transition">
                         Proyectos
                     </a>
                 </li>
 
                 <!-- Contacto -->
                 <li class="mr-3">
-                    <a href="{{ route('home') }}#contacto" class="px-4 py-2 text-blue-800 hover:bg-blue-600 hover:text-white rounded-full transition">
+                    <a href="{{ route('home') }}#contacto" class="px-4 py-2 text-dark hover:bg-orange-400 hover:text-white rounded-full transition">
                         Contactame
                     </a>
                 </li>
 
                 <!-- about -->
                 <li class="mr-3">
-                    <a href="{{ route('about') }}" class="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition shadow">  
+                    <a href="{{ route('about') }}" class="px-4 py-2 bg-orange-300 text-dark rounded-full hover:bg-orange-500 transition shadow">  
                         about
                     </a>
                 </li>
@@ -59,7 +59,7 @@
 <!-- FIN NAV BAR -->
 
     <!-- Contenido Principal -->
-    <main class="pt-20">
+    <main class="pt-20 bg-yellow-600">
         @yield('content')
     </main>
 

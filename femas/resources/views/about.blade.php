@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="py-20 bg-white min-h-screen">
+<section class="py-20 bg-yellow-100 min-h-screen">
     <div class="max-w-6xl mx-auto px-4">
 
         <!-- Tecnologías Utilizadas -->

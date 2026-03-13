@@ -11,32 +11,32 @@ class HomeController extends Controller
         $projects = [
             [
                 'title' => 'proyecto 01',
-                'desc' => 'xxxxxxxxx    xxxxxx  xxxxxx',
+                'desc' => 'DESCRIPCION',
                 'link' => '#'
             ],
             [
                 'title' => 'proyecto 02',
-                'desc' => 'xxxxxxxxx    xxxxxx  xxxxxx',
+                'desc' => 'DESCRIPCION',
                 'link' => '#'
             ],
             [
                 'title' => 'proyecto 03',
-                'desc' => 'xxxxxxxxx    xxxxxx  xxxxxx',
+                'desc' => 'DESCRIPCION',
                 'link' => '#'
             ],
             [
                 'title' => 'proyecto 04',
-                'desc' => 'xxxxxxxxx    xxxxxx  xxxxxx',
+                'desc' => 'DESCRIPCION',
                 'link' => '#'
             ],
             [
                  'title' => 'proyecto 05',
-                'desc' => 'xxxxxxxxx    xxxxxx  xxxxxx',
+                'desc' => 'DESCRIPCION',
                 'link' => '#'
             ],
             [
                 'title' => 'proyecto 06',
-                'desc' => 'xxxxxxxxx    xxxxxx  xxxxxx',
+                'desc' => 'DESCRIPCION',
                 'link' => '#'
             ],                        
         ];

@@ -3,7 +3,7 @@
 @section('content')
 
         <!-- CAROUSEL BOOTSTRAP -->
-        <div id="carouselFemas" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        <div id="carouselFemas" class=" carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
             
             <!-- Indicadores -->
             <div class="carousel-indicators">
@@ -73,7 +73,7 @@
 </section>
 
 <!-- Sección de Contacto -->
-<section id="contacto" class="py-20 bg-gray-900 text-white">
+<section id="contacto" class="py-65 bg-gray-900 text-white">
     <div class="max-w-4xl mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-8">¿Trabajamos juntos?</h2>
         <p class="text-gray-400 mb-8">Estoy disponible para nuevos proyectos. Envíame un correo y hablemos.</p>
